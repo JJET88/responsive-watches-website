@@ -2,7 +2,7 @@ import React from "react";
 
 const Feature = () => {
   return (
-    <div id="feature" className=" max-w-[1240px] mx-auto  mt-10">
+    <div id="feature" className="  max-w-[1240px] mx-auto mt-20">
       <h1 className=" text-center text-xl tracking-wide ">FEATURED</h1>
       <div className="grid md:grid-cols-3  my-10 p-10 gap-20">
         <div className=" shadow  w-full flex flex-col items-center hover:scale-105 duration-300">

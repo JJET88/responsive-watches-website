@@ -9,10 +9,16 @@ import NewLetters from "./components/NewLetters";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import { Route, Routes } from "react-router-dom";
+import Cart from "./components/Cart";
+import { CustomState } from "./components/StateContext";
 const App = () => {
+  const {dark,setDark} = CustomState();
+
   return (
-    <div>
+    <div className={dark? " bg-black text-white": " bg-white text-black"}>
+
       <Navbar />
+      <Cart/>
       <Home />
       <Feature />
       <Story />
